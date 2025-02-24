@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form in html and css</title>
+    <link rel = "stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Links Boxicons library for using icons. -->
+</head>
+<body>
+    <div class="wrapper"><!--A container for the login form, useful for styling.. -->
+        <form action = ""><!--Starts a form 
+            The action="" attribute means the form currently does nothing when submitted-->
+            <h1>Login</h1>                                   
+            <div class ="input-box"> <!--container for input field-->
+                <input type ="text" placeholder = "Username" required><!-- placeholder shows username inside thebox, requires is for compulsury-->
+                <i class='bx bxs-user'></i><!-- Displays a user icon from the Boxicons library.-->
+            </div>
+            <div class ="input-box">
+                <input type ="password" 
+                 placeholder = "password" required><!-- type="password": Hides the text entered-->
+                 <i class='bx bxs-lock-alt'></i> <!--displays the lock icon-->
+            </div>
+            <div class = "remember-forgot">
+                <label><input type ="checkbox"> Remember me</label>
+                <a href ="#"> Forgot password?</a> <!-- A link to reset the password.-->
+            </div>
+            <button type = "submit" class ="btn">login</button>
+            <div class = "register-link">
+                <p>Dont have an  account
+                    <a href ="#">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
